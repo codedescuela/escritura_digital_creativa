@@ -1,0 +1,244 @@
+/*css para codedescuela.cl
+por aaron montoya-moraga
+abril 2017*/
+
+/*Add fonts*/
+/*@font-face {
+    font-family: 'vag_roundedregular';
+    src: url('vag_roundedregular-webfont.woff2') format('woff2'),
+         url('vag_roundedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+@font-face {
+    font-family: 'inconsolata';
+    src: url('inconsolata.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*css for paragraphs ("p" elements) and headers ("h" elements)*/
+p, h1, h2, h3, h4, h5, h6 {
+    color: black;
+    /*set font to the font wanted*/
+    font-family: 'inconsolata';
+    /*normal text, no italics, no bold*/
+    font-weight: normal;
+    /*centered text*/
+    text-align: left;
+    /*display in block*/
+    display: inline-block;
+    /*reset margin and padding for google chrome */
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    /*no padding (inner space of element)*/
+    padding: 1.5%;
+    /*margin (outter space of element)*/
+    /*first reset, then set actual value wanted*/
+    margin: 0.3em;    
+
+}
+
+
+
+/*css for font sizes of header elements*/
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.0em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}
+
+/*css for links ("a" elements)*/
+
+a {
+    /*reset of format*/
+    text-decoration: none;
+    /*set font to avantgarde*/
+    font-family: 'inconsolata';
+    /*set color to black*/
+    color: black;
+
+}
+
+h1 {
+
+
+    color: white;
+    background-color: #ED1568;
+
+}
+
+
+/*css for links ("a" elements), when hovering over them*/
+
+a:hover {
+    /*change opacity of link*/
+    background-color: #ED1568;
+}
+
+#myContent a:link {
+    color: #ED1568;
+}
+
+/*css for figure elements*/
+
+figure {
+    /*display as block element*/
+    display: block;
+    /*no padding(inner space of element)*/
+    padding: 50px;
+    /*margin (outer space of element)*/
+    margin: auto;
+}
+
+
+/*css for figcaption elements nested under figure elements*/
+
+figure figcaption {
+    font-family: 'inconsolata';
+    font-weight: normal;
+    text-align: center;
+    font-size: 100%;
+    padding-top: 0.7%;
+}
+
+
+/*css for element with id myNavMenu*/
+
+#myNavMenu {
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 2%;
+}
+
+
+/*css for a elements under element with id myNavMenu*/
+
+#myNavMenu a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all 0.5s ease;
+}
+
+#myMain p {
+    padding: 10%;
+    color: white;
+    background-color: #ED1568 ;
+    font-size: 150%;
+    text-align:center;
+
+
+}
+/*css for html element with id coverPictureDiv*/
+
+#coverPictureDiv {
+    max-height: 50%;
+    padding: 50px 0px 20px 0px;
+}
+
+
+/*css for html element with id coverPicture*/
+
+#coverPicture {
+    display: block;
+    margin: auto;
+    vertical-align: top;
+    max-width: 50%;
+    /*max-height: 25%;*/
+    height: auto;
+}
+
+#myHeader h2 {
+    text-align: center;
+    display: block;
+    color: black;
+    background-color: white;
+
+}
+
+/*css para el footer*/
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+
+}
+
+#myFooter p {
+    padding: 0;
+    text-align: center;
+    color: black;
+    background-color: #efefef;
+
+
+
+}
+
+
+/*css for about page*/
+
+
+/*align paragraphs and headers to the left*/
+
+#about p, #about h1, #about h2, #about h3, #about h4, #about h5, #about h6 {
+    text-align: justify;
+}
+
+/*css de la pagina de equipo*/
+
+
+/*parrafos y encabezados alineados a la derecha*/
+
+#equipo p, #equipo h1, #equipo h2, #equipo h3, #equipo h4, #equipo h5, #equipo h6 {
+    text-align: justify;
+}
+
+/*css de la pagina de talleres*/
+
+
+/*parrafos y encabezados alineados a la derecha*/
+
+#talleres p, #talleres h1, #talleres h2, #talleres h3, #talleres h4, #talleres h5, #talleres h6 {
+    text-align: justify;
+}
+
+/*css for contact page*/
+
+
+/*align paragraphs and headers to the left*/
+
+#contact p, #contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
+    text-align: justify;
+}

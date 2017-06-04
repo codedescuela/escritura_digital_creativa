@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>introducción a p5.js - sesión 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white_lower.css" id="theme">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <!--- Enlaces highlights.js para utilizar bibliteca para imprimir códigos. usar <pre><code>...</pre></code> --->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--- FIN Enlaces biblioteca highlights.js --->
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <script type="text/template">
+          <h2>Introducción a la programación creativa en p5.js</h2>
+          <br>
+          <h3>Sesión 1</h3>
+          <p>
+            <a target="_blank" href="http://codedescuela.cl/">Coded Escuela </a><br>
+            <small>Versión 0.0.1 por <a target="_blank" href="https://github.com/gamontec">Guillermo Montecinos</a><small>
+          </p>
+        </script>
+      </section>
+      <section>
+        <h3 style="text-align:left;">¿Quiénes somos?</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li><b>Camila Colussi</b>: artista visual. Parte del colectivo de artistas <a target="_blank" href="http://www.loselectros.com/">Los Electros</a>.</li>
+            <li><b>Guillermo Montecinos</b>: ingeniero eléctrico, músico, programador.</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Sobre Coded Escuela</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li><a target="_blank" href="http://www.nataliacabrera.com">Natalia Cabrera</a></li>
+            <li><a target="_blank" href="https://www.camilacolussi.com">Camila Colussi</a></li>
+            <li><a target="_blank" href="https://gamontec.github.io">Guillermo Montecinos</a></li>
+            <li><a target="_blank" href="http://montoyamoraga.io">Aarón Montoya-Moraga</a></li>
+            <li><a target="_blank" href="http://error404.cl/">Christian Oyarzún</a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Sobre Coded Escuela</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li>Programación creativa</li>
+            <li>Espacio seguro</li>
+            <li>Nuestros valores</li>
+            <li>Código abierto</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3>Objetivos</h3>
+        <p align="left">
+          <ul>
+            <li>Formar una comunidad colaborativa de hackers, artistas, amigos</li>
+            <li>Respetarnos y protegernos</li>
+            <li>Aprender a programar JavaScript</li>
+            <li>Crear aplicaciones visuales, creativas y sonoras utilizando la biblioteca <a target="_blank" href="http://p5js.org/">p5.js</a></li>
+
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h3>Sesión 1</h3>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Contenidos</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>¿Qué significa programar?</li>
+            <li>¿Por qué programar?</li>
+            <li>Fundamentos de HTML</li>
+            <li>Fundamentos de JavaScript</li>
+            <ul>
+              <li>Sintaxis</li>
+              <li>Lógica</li>
+            </ul>
+            <li>p5.js</li>
+            <ul>
+              <li>Funciones básicas</li>
+            </ul>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h6 style="text-align:left;">Motivación</h6>
+        <p>
+          <ul>
+          <li>¿Qué entendemos por programación?</li>
+          <li>¿Por qué nos interesa programar?</li>
+          <li>¿Conocen ejemplos de programación + arte?</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h6 style="text-align:left;">Motivación</h6>
+        <p>
+          <ul style="float:left;">
+            <li><a href="https://www.potatoyourface.com/">Potato your face</a></li>
+            <li><a href="http://www.wipawe.com/">Wipawe Sirikolkarn</a></li>
+            <li><a href="http://www.anxietybrain.net/">The Anxious Brain of an Artist</a></li>
+            <li><a href="https://www.youtube.com/watch?v=78teeavJbjw">6:34</a></li>
+            <li><a href="http://error404.cl/psyDr34m5/">PSY.DR34M5</a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Qué significa programar?</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Escribir instrucciones para que un dispositivo realice las tareas que quieras</li>
+            <li>Dispositivos: computador, celular, Arduino, TV, microondas, etc.</li>
+            <li>Los computadores calculan, no deducen</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Qué significa programar?</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Algoritmo: secuencia de instrucciones a ser ejecutadas. Receta de cocina para el computador.</li>
+            <li>Código: texto que el computador puede entender.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+        <p>
+          <h6 style="text-align:left;">Ejemplo de código</h6>
+        </p>
+
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+        <p align="right">
+          <small>
+						Este código está escrito JavaScript, un lenguaje de programación
+					</small>
+          </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Por qué programar?</h6>
+        </p>
+        <ul>
+          <li>Programar para crear nuestras propias herramientas</li>
+          <li>Programar con fines productivos y artísticos</li>
+          <!-- <li>Programar el reloj y no quedarse dormido</li> -->
+          <li>Programar para ser partícipes de la tecnología, no solo espectadores</li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          <h6>¿Por qué programar?</h6>
+        </p>
+        <p>
+            <a href="http://nicole.pizza/">Porque sí</a>
+        </p>
+        <p>
+          <small>(Esta es la página de la artista Nicole He)</small>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">p5.js</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Biblioteca JavaScript, gratuita, de código abierto</li>
+            <li><a target="_blank" href="https://p5js.org/es">p5js.org</a></li>
+            <li><q> "p5.js es una comunidad interesada en la exploración y creación de arte y diseño con tecnología".</q></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Herramientas necesarias para programar</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Editor de texto</li>
+            <ul>
+              <li><a target="_blank" href="https://atom.io/">Atom</a></li>
+              <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></li>
+              <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a></li>
+            </ul>
+            <li>Descargar <a target="_blank" href="http://p5js.org/download/">p5.js</a></li>
+            <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a> (sesión 2)</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Primer ejemplo: dibujar un rectángulo (1.1)</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Analicemos el ejemplo anterior:</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Escribimos código en HTML (página web)</li>
+            <li>Creamos un canvas (lienzo) en la página web</li>
+            <li>Dibujamos en el lienzo</li>
+
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Nuestra página web se ve así:</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+	  						<meta charset="UTF-8">
+							  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+							  <script language="javascript" type="text/javascript" src="ejemplo_1_1.js"></script>
+							  <style> body {padding: 0; margin: 0;} </style>
+							</code>
+						</pre>
+        <p>
+          <ul style="float:left;">
+            <li>Script: programa escrito en JavaScript</li>
+            <li>El comando HTML <code>script</code> permite cargar archivos</li>
+            <li><code>script</code> carga <code>p5.js</code> y <code>ejemplo_1_1.js</code></li>
+            <li>Skecth (bosquejo): programa escrito con p5.js</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Nuestro bosquejo</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+        <p>
+          <ul style="float:left;">
+            <li>Con <code>createCanvas();</code> creamos el lienzo</li>
+            <li>Con <code>rect();</code> dibujamos un rectángulo</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Orden de ejecución</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+        <p>
+          <ul>
+            <li>Ejecución línea a línea, de arriba hacia abajo</li>
+            <li><code>setup()</code> se ejecuta al principio, una vez</li>
+            <li><code>draw()</code> corre en bucle, después de setup()</li>
+            <li><code>setup()</code> y <code>draw()</code> son funciones</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Orden de ejecución: función <code>setup()</code></h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+							</code>
+						</pre>
+        <p>
+          <ul>
+            <li>En <code>setup()</code> definimos las condiciones iniciales</li>
+            <li>Aquí creamos un lienzo con <code>createCanvas()</code></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Orden de ejecución: función <code>draw()</code></h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+        <p>
+          <ul>
+            <li><code>draw()</code> se ejecuta en bucle, después de <code>setup()</code></li>
+            <li>Dibujamos un rectángulo en el lienzo con <code>rect();</code></li>
+            <li><code>rect(50,50,20,20);</code>define sus características</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Sintaxis</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+								function setup(){
+								  createCanvas(200,200);
+								}
+								function draw(){
+								  rect(100,100,50,50);
+								}
+							</code>
+						</pre>
+        <p>
+          <ul>
+            <li>Bloque de código: contenido entre llaves<code>{}</code></li>
+            <li>Línea de código: delimitada por punto y coma (<code>;</code>):</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Figuras básicas: rectángulo</h6>
+        </p>
+        <pre>
+								<code class="hljs" data-trim contenteditable>
+									function setup(){
+									  createCanvas(200,200);
+									}
+
+									function draw(){
+									  rect(100,100,50,50);
+									}
+								</code>
+							</pre>
+
+        <p>
+          <ul style="float:left;">
+            <li><code>rect(posX, posY, alto, ancho)</code></li>
+            <li><a target="_blank" href="http://p5js.org/es/reference/">Referencia de p5.js</a></li>
+            </u>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Segundo ejemplo: dibujar una elipse (1.2)</h6>
+        </p>
+        <p>
+          <pre>
+						<code class="hljs" data-trim contenteditable>
+							function setup(){
+							  createCanvas(300,200);
+							}
+
+							function draw(){
+							  ellipse(150,100,90,90);
+							}
+						</code>
+					</pre>
+          <ul style="float:left;">
+            - formas elementales:
+            <ul>
+              - elipse<br> - línea
+            </ul>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: sintaxis</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>"Conjunto de líneas de código que realizan una tarea específica y que puede retornar un valor. Puede tomar parámetros que modifican su funcionamiento." <a target="_blank" href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C%2B%2B/Funciones">Fuente</a></q></li>
+            <li>La sintaxis de las funciones de p5.js está en la <a target="_blank" href="https://p5js.org/es/reference/">referencia</a></li>
+            </ul>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: argumentos</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>funciones que requieren argumento: </li>
+            <ul>
+              <li><code>createCanvas(300,200)</code></li>
+              <li><code>ellipse(100,100,50,50)</code></li>
+            </ul>
+            <li>funciones que no requieren argumento: </li>
+            <ul>
+              <li><code>setup()</code></li>
+              <li><code>draw()</code></li>
+            </ul>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: <code>createCanvas()</code></h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Crea un lienzo (canvas) para dibujar</li>
+            <li>Sintaxis: <code>createCanvas(ancho, alto)</code></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: <code>createCanvas()</code></h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>mostrar un esquema de un canvas</li>
+            <li>Es una matriz 2D, con filas y columnas</li>
+            <li>Cada pixel corresponde a un par ordenado <code>(x,y)</code></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: revisión del ejemplo 1.2</h6>
+        </p>
+        <pre>
+						<code class="hljs" data-trim contenteditable>
+							function setup(){
+							  createCanvas(300,200);
+							}
+
+							function draw(){
+							  ellipse(150,100,90,90);
+							}
+						</code>
+					</pre>
+        <p>
+          <ul style="float:left;">
+            <li>No hemos definido el color del lienzo</li>
+            <li>¿Cómo pintamos el lienzo completo?</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones: color del lienzo</h6>
+        </p>
+        <pre>
+						<code class="hljs" data-trim contenteditable>
+							function setup(){
+							  createCanvas(300,200);
+							  background(150);
+							}
+
+							function draw(){
+							  ellipse(150,100,90,90);
+							}
+						</code>
+					</pre>
+        <p>
+          <ul style="float:left;">
+            <li>La función <code>background(color)</code> pinta el lienzo</li>
+            <li><code>background(150)</code> pinta el lienzo de color gris</li>
+            <li>¿Cómo definimos el color del lienzo?</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h2>¡a experimentar!</h2>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Referencias</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li><a target="_blank" href="http://p5js.org/es/reference/">Referencia p5.js</a><br></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">The Coding Train</a>, Daniel Shiffman<br></li>
+            <li>"Make: Getting Started with p5.js", Lauren McCarthy, Casey Reas and Ben Fry. Maker Media, 2015.</li>
+          </ul>
+        </p>
+      </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
