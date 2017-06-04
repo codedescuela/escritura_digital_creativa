@@ -1,2 +1,3 @@
-# taller_manipulacion_electronica_de_texto
-clase sobre manipulación de text
+# escritura_digital_creativa
+
+taller de introducción a la programación en python para crear y manipular textos digitalmente.
