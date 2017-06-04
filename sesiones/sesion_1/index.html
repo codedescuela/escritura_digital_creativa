@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>introducción a p5.js - sesión 1</title>
+  <title>escritura digital creativa - sesión 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="stylesheet" href="css/reveal.css">
@@ -36,12 +36,12 @@
     <div class="slides">
       <section data-markdown>
         <script type="text/template">
-          <h2>Introducción a la programación creativa en p5.js</h2>
+          <h2>Escritura digital creativa</h2>
           <br>
           <h3>Sesión 1</h3>
           <p>
             <a target="_blank" href="http://codedescuela.cl/">Coded Escuela </a><br>
-            <small>Versión 0.0.1 por <a target="_blank" href="https://github.com/gamontec">Guillermo Montecinos</a><small>
+            <small>Versión 0.0.1 por <a target="_blank" href="https://github.com/gamontec">Aarón Montoya-Moraga</a><small>
           </p>
         </script>
       </section>
@@ -49,13 +49,12 @@
         <h3 style="text-align:left;">¿Quiénes somos?</h3>
         <p style="text-align:left">
           <ul style="float:left">
-            <li><b>Camila Colussi</b>: artista visual. Parte del colectivo de artistas <a target="_blank" href="http://www.loselectros.com/">Los Electros</a>.</li>
-            <li><b>Guillermo Montecinos</b>: ingeniero eléctrico, músico, programador.</li>
+            <li><b>Aarón Montoya-Moraga</b>: artista, performer, músico.
           </ul>
         </p>
       </section>
       <section>
-        <h3 style="text-align:left;">Sobre Coded Escuela</h3>
+        <h3 style="text-align:left;">Personas de Coded Escuela</h3>
         <p style="text-align:left">
           <ul style="float:left">
             <li><a target="_blank" href="http://www.nataliacabrera.com">Natalia Cabrera</a></li>
@@ -71,20 +70,19 @@
         <p style="text-align:left">
           <ul style="float:left">
             <li>Programación creativa</li>
-            <li>Espacio seguro</li>
-            <li>Nuestros valores</li>
+            <li>Espacio seguro y ético</li>
             <li>Código abierto</li>
           </ul>
         </p>
       </section>
       <section>
-        <h3>Objetivos</h3>
+        <h3>Objetivos del taller</h3>
         <p align="left">
           <ul>
             <li>Formar una comunidad colaborativa de hackers, artistas, amigos</li>
             <li>Respetarnos y protegernos</li>
-            <li>Aprender a programar JavaScript</li>
-            <li>Crear aplicaciones visuales, creativas y sonoras utilizando la biblioteca <a target="_blank" href="http://p5js.org/">p5.js</a></li>
+            <li>Aprender a programar en Python</li>
+            <li>Escribir software que nos permita crear y manipular texto digitalmente</li>
 
           </ul>
         </p>
@@ -102,16 +100,8 @@
           <ul style="float:left;">
             <li>¿Qué significa programar?</li>
             <li>¿Por qué programar?</li>
-            <li>Fundamentos de HTML</li>
-            <li>Fundamentos de JavaScript</li>
-            <ul>
-              <li>Sintaxis</li>
-              <li>Lógica</li>
-            </ul>
-            <li>p5.js</li>
-            <ul>
-              <li>Funciones básicas</li>
-            </ul>
+            <li>Fundamentos de programación</li>
+            <li>Fundamentos de Python</li>
           </ul>
         </p>
       </section>
@@ -121,7 +111,7 @@
           <ul>
           <li>¿Qué entendemos por programación?</li>
           <li>¿Por qué nos interesa programar?</li>
-          <li>¿Conocen ejemplos de programación + arte?</li>
+          <li>¿Ejemplos de programación + texto?</li>
           </ul>
         </p>
       </section>
@@ -129,11 +119,8 @@
         <h6 style="text-align:left;">Motivación</h6>
         <p>
           <ul style="float:left;">
-            <li><a href="https://www.potatoyourface.com/">Potato your face</a></li>
-            <li><a href="http://www.wipawe.com/">Wipawe Sirikolkarn</a></li>
-            <li><a href="http://www.anxietybrain.net/">The Anxious Brain of an Artist</a></li>
-            <li><a href="https://www.youtube.com/watch?v=78teeavJbjw">6:34</a></li>
-            <li><a href="http://error404.cl/psyDr34m5/">PSY.DR34M5</a></li>
+            <li><a href="http://www.decontextualize.com/projects/">Allison Parrish</a></li>
+            <li><a href="http://intergovernmentalpaneloncapitalism.org/index.html">Sam Lavigne</a></li>
           </ul>
         </p>
       </section>
@@ -167,19 +154,15 @@
         </p>
 
         <pre>
-							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
-
-								function draw(){
-								  rect(100,100,50,50);
-								}
-							</code>
-						</pre>
+          <code class="hljs" data-trim contenteditable>
+            metaforas = 4;
+            nivelDelMar = metaforas + 2;
+            "cuatro"
+					</code>
+        </pre>
         <p align="right">
           <small>
-						Este código está escrito JavaScript, un lenguaje de programación
+						Este código está escrito en Python, un lenguaje de programación
 					</small>
           </p>
       </section>
@@ -196,30 +179,21 @@
       </section>
       <section>
         <p>
-          <h6>¿Por qué programar?</h6>
-        </p>
-        <p>
-            <a href="http://nicole.pizza/">Porque sí</a>
-        </p>
-        <p>
-          <small>(Esta es la página de la artista Nicole He)</small>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">p5.js</h6>
+          <h6 style="text-align:left;">Python</h6>
         </p>
         <p>
           <ul style="float:left;">
-            <li>Biblioteca JavaScript, gratuita, de código abierto</li>
-            <li><a target="_blank" href="https://p5js.org/es">p5js.org</a></li>
-            <li><q> "p5.js es una comunidad interesada en la exploración y creación de arte y diseño con tecnología".</q></li>
+            <li>Lenguaje de programación</li>
+            <li><a target="_blank" href="https://www.python.org/">python.org</a></li>
+            <li><a target="_blank" href="https://pypi.python.org/">PyPI: Python Package Index</a></li>
+            <li><q> "Python tiene una filosofía de diseño que promueve la escritura de programas de fácil lectura, claros y de pocas líneas de  código."</q></li>
+
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Herramientas necesarias para programar</h6>
+          <h6 style="text-align:left;">Herramientas necesarias del taller</h6>
         </p>
         <p>
           <ul style="float:left;">
@@ -229,14 +203,14 @@
               <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></li>
               <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a></li>
             </ul>
-            <li>Descargar <a target="_blank" href="http://p5js.org/download/">p5.js</a></li>
-            <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a> (sesión 2)</li>
+            <li>Instalar <a target="_blank" href="https://www.python.org/downloads/">Python 3.x</a></li>
+            <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a></li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Primer ejemplo: dibujar un rectángulo (1.1)</h6>
+          <h6 style="text-align:left;">Instalación de Python</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
@@ -438,9 +412,10 @@
         </p>
         <p>
           <ul style="float:left;">
-            <li>"Conjunto de líneas de código que realizan una tarea específica y que puede retornar un valor. Puede tomar parámetros que modifican su funcionamiento." <a target="_blank" href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C%2B%2B/Funciones">Fuente</a></q></li>
+            <li>"Conjunto de líneas de código que realizan una tarea específica y que puede retornar un valor. Puede tomar parámetros que modifican su funcionamiento." <a target="_blank" href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C%2B%2B/Funciones">Fuente</a></q>
+            </li>
             <li>La sintaxis de las funciones de p5.js está en la <a target="_blank" href="https://p5js.org/es/reference/">referencia</a></li>
-            </ul>
+          </ul>
           </ul>
         </p>
       </section>
@@ -551,31 +526,58 @@
       </section>
 
 
-			</div>
-		</div>
+    </div>
+  </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [{
+          src: 'lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+</body>
+
 </html>
