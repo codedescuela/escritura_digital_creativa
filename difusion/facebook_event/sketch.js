@@ -65,7 +65,7 @@ function drawText() {
 
     text("> " + "horario = 7:30pm - 10:30pm", xPos, 6*yDiv);
 
-    text("> " + "precio = $50.000, $20.000 estudiantes, incluye wifi y once", xPos, 7*yDiv);
+    text("> " + "precio = $50.000, $20.000 estudiantes, incluye once", xPos, 7*yDiv);
 
     text("> " + "cupos = 5 personas", xPos, 8*yDiv);
 
