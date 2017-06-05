@@ -1,3 +1,11 @@
+var myFont;
+
+function preload() {
+  myFont = loadFont('./assets/ProFont.ttf');
+}
+
+
+
 function setup() {
   createCanvas(1920, 1080);
   //background(255, 229, 234);
@@ -39,7 +47,9 @@ function drawText() {
 
     //text font
     noStroke();
-    textFont("Didot Regular");
+    //textFont("Didot Regular");
+
+    textFont(myFont);
 
     text("> ", xPos, 0);
 
