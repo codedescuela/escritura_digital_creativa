@@ -1,7 +1,7 @@
 var myFont;
 
 function preload() {
-  myFont = loadFont('./assets/ProFont.ttf');
+  myFont = loadFont('./assets/inconsolata.otf');
 }
 
 
