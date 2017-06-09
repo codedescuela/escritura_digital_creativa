@@ -4,8 +4,6 @@ function preload() {
   myFont = loadFont('./assets/inconsolata.otf');
 }
 
-
-
 function setup() {
   createCanvas(1920, 1080);
   //background(255, 229, 234);
@@ -39,7 +37,7 @@ function drawText() {
 
     xPos = 1 * width/50;
 
-    yDiv = height / 12;
+    yDiv = height / 8;
 
     strokeWeight(1);
 
@@ -53,27 +51,19 @@ function drawText() {
 
     text("> ", xPos, 0);
 
-    text("> " + "título = taller de escritura digital creativa", xPos, 1*yDiv);
+    text("> " + "taller de escritura digital creativa", xPos, 1*yDiv);
 
-    text("> " + "área = letras + programación ", xPos, 2*yDiv);
+    text("> " + "para principiantes, sin requisitos previos", xPos, 2*yDiv);
 
-    text("> " + "contenidos = programación, python, texto generativo", xPos, 3*yDiv);
+    text("> " + "requisitos son saber leer y hacer click", xPos, 3*yDiv);
 
-    text("> " + "requisitos = saber leer y hacer click", xPos, 4*yDiv);
+    text("> " + "los 4 miércoles de julio 2017, 7:30pm-10:30pm", xPos, 4*yDiv);
 
-    text("> " + "duración = 4 sesiones, miércoles julio 2017", xPos, 5*yDiv);
+    text("> " + "$50.000 / $20.000 estudiantes", xPos, 5*yDiv);
 
-    text("> " + "horario = 7:30pm - 10:30pm", xPos, 6*yDiv);
+    text("> " + "organiza http://codedescuela.cl", xPos, 6*yDiv);
 
-    text("> " + "precio = $50.000, $20.000 estudiantes, incluye once", xPos, 7*yDiv);
-
-    text("> " + "cupos = 5 personas", xPos, 8*yDiv);
-
-    text("> " + "organización = http://codedescuela.cl", xPos, 9*yDiv);
-
-    text("> " + "profesor = http://montoyamoraga.io", xPos, 10*yDiv);
-
-    text("> " + "inscripciones y preguntas = aaron@codedescuela.cl", xPos, 11*yDiv);
+    text("> " + "profesor http://montoyamoraga.io", xPos, 7*yDiv);
 
     //restore previous drawing mode
     pop();
