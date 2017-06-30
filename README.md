@@ -8,7 +8,7 @@ el curso es dictado por el profesor aarón montoya-moraga, para la escuela coded
 
 ## sobre el profesor
 
-aarón es chileno, ingeniero eléctrico, master en artes mediales de nyu itp, se especializa en la escritura de software para performance en vivo, con técnicas de síntesis y manipulación digital de audio, video y texto en tiempo real. es co-fundador y profesor de coded - escuela de artes mediales y oficios electrónicos.
+aarón es chileno, ingeniero eléctrico, master en artes mediales de nyu itp, se especializa en la escritura de software para performance en vivo, con técnicas de síntesis y manipulación digital de audio, video y texto en tiempo real. es co-fundador y profesor de coded - escuela de artes y oficios electrónicos.
 
 ## sesiones y contenidos
 
@@ -49,7 +49,6 @@ aarón es chileno, ingeniero eléctrico, master en artes mediales de nyu itp, se
 * profundización en consola
 * aplicaciones para twitter
 * cadenas de markov
-
 
 ## compromisos
 
