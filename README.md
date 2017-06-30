@@ -59,5 +59,5 @@ coded escuela podrá hacer uso de código y material audiovisual generado durant
 
 ## bibliografía
 
-* [https://github.com/ITPNYU/ICM-2015](clase nyu itp: introduction to computation media)
-* [http://rwet.decontextualize.com/](clase nyu itp, por allison parrish: reading and writing electronic text)
+* (https://github.com/ITPNYU/ICM-2015[clase nyu itp: introduction to computation media]
+* (http://rwet.decontextualize.com/)[clase nyu itp, por allison parrish: reading and writing electronic text
