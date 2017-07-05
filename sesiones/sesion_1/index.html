@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>escritura digital creativa - sesión 1</title>
+  <title>Coded - Taller de escritura digital creativa - sesión 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="stylesheet" href="css/reveal.css">
@@ -36,7 +36,7 @@
     <div class="slides">
       <section data-markdown>
         <script type="text/template">
-          <h2>Escritura digital creativa</h2>
+          <h2>Taller de escritura digital creativa</h2>
           <br>
           <h3>Sesión 1</h3>
           <p>
@@ -49,12 +49,12 @@
         <h3 style="text-align:left;">¿Quiénes somos?</h3>
         <p style="text-align:left">
           <ul style="float:left">
-            <li><b>Aarón Montoya-Moraga</b>: artista, performer, músico.
+            <li><b><a href="http://montoyamoraga.io/">Aarón Montoya-Moraga</a></b>: artista, programador, músico
           </ul>
         </p>
       </section>
       <section>
-        <h3 style="text-align:left;">Personas de Coded Escuela</h3>
+        <h3 style="text-align:left;">Coded Escuela</h3>
         <p style="text-align:left">
           <ul style="float:left">
             <li><a target="_blank" href="http://www.nataliacabrera.com">Natalia Cabrera</a></li>
@@ -76,14 +76,23 @@
         </p>
       </section>
       <section>
+        <h3 style="text-align:left;">Nuestros talleres</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li>Intro a la programación y artes visuales en p5.js</li>
+            <li>Intro a la programación y literatura en Python</li>
+            <li>Intro a la programación y sonido en Pure Data</li>
+          </ul>
+        </p>
+      </section>
+      <section>
         <h3>Objetivos del taller</h3>
         <p align="left">
           <ul>
-            <li>Formar una comunidad colaborativa de hackers, artistas, amigos</li>
             <li>Respetarnos y protegernos</li>
-            <li>Aprender a programar en Python</li>
+            <li>Formar una comunidad colaborativa de hackers, artistas, amigos, programadores</li>
             <li>Escribir software que nos permita crear y manipular texto digitalmente</li>
-
+            <li>Aprender a programar en Python</li>
           </ul>
         </p>
       </section>
@@ -98,10 +107,14 @@
         </p>
         <p>
           <ul style="float:left;">
-            <li>¿Qué significa programar?</li>
-            <li>¿Por qué programar?</li>
+            <li>¿Qué es programar? ¿Para qué hacerlo?</li>
+            <li>Lenguajes de programación</li>
             <li>Fundamentos de programación</li>
+            <li>Entornos de programación creativa</li>
+            <li>Terminal y editor de código</li>
             <li>Fundamentos de Python</li>
+            <li>Variables y funciones</li>
+            <li>Nuestro primer programa</li>
           </ul>
         </p>
       </section>
@@ -111,7 +124,7 @@
           <ul>
           <li>¿Qué entendemos por programación?</li>
           <li>¿Por qué nos interesa programar?</li>
-          <li>¿Ejemplos de programación + texto?</li>
+          <li>Ejemplos de programación + texto</li>
           </ul>
         </p>
       </section>
@@ -120,7 +133,16 @@
         <p>
           <ul style="float:left;">
             <li><a href="http://www.decontextualize.com/projects/">Allison Parrish</a></li>
+            <ul>
+                <li><a href="https://twitter.com/deepquestionbot">The Ephemerides</a></li>
+                <li><a href="https://thenewinquiry.com/taxonomy-of-humans-according-to-twitter/">Deep Question Bot</a></li>
+            </ul>
             <li><a href="http://intergovernmentalpaneloncapitalism.org/index.html">Sam Lavigne</a></li>
+              <ul>
+                <li><a href="https://thenewinquiry.com/taxonomy-of-humans-according-to-twitter/">The Infinite Campaign </a></li>
+                <li><a href="http://intergovernmentalpaneloncapitalism.org/">The Intergovernmental Panel on Capitalism</a></li>
+              </ul>
+                <li><a href="nonsequitur.py">nonsequitur.py</a></li>
           </ul>
         </p>
       </section>
@@ -155,8 +177,8 @@
 
         <pre>
           <code class="hljs" data-trim contenteditable>
-            metaforas = 4;
-            nivelDelMar = metaforas + 2;
+            metaforas = 4
+            nivelDelMar = metaforas + 2
             "cuatro"
 					</code>
         </pre>
@@ -203,159 +225,111 @@
               <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></li>
               <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a></li>
             </ul>
-            <li>Instalar <a target="_blank" href="https://www.python.org/downloads/">Python 3.x</a></li>
+            <li>Instalar <a target="_blank" href="https://www.python.org/downloads/">Python 2.7.x</a></li>
             <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a></li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Instalación de Python</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
-								function draw(){
-								  rect(100,100,50,50);
-								}
-							</code>
-						</pre>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Analicemos el ejemplo anterior:</h6>
+          <h6 style="text-align:left;">Primer ejemplo</h6>
         </p>
         <p>
           <ul style="float:left;">
-            <li>Escribimos código en HTML (página web)</li>
-            <li>Creamos un canvas (lienzo) en la página web</li>
-            <li>Dibujamos en el lienzo</li>
-
+            <li>Abrir editor de código (Atom, Sublime, Notepad)</li>
+            <li>Escribir el siguiente código</li>
+            <pre>
+              <code class="hljs" data-trim contenteditable>
+                x = 4
+                y = x + 2
+                print x
+                print y
+    					</code>
+            </pre>
+            <li>Grabar el archivo como ejemplo00.py</li>
+            <li>Abrir la terminal</li>
+            <li>Ejecutar el código con: python ejemplo00.py</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Nuestra página web se ve así:</h6>
+          <h6 style="text-align:left;">Resultado en la terminal</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
-	  						<meta charset="UTF-8">
-							  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-							  <script language="javascript" type="text/javascript" src="ejemplo_1_1.js"></script>
-							  <style> body {padding: 0; margin: 0;} </style>
+                4
+                6
 							</code>
 						</pre>
         <p>
           <ul style="float:left;">
-            <li>Script: programa escrito en JavaScript</li>
-            <li>El comando HTML <code>script</code> permite cargar archivos</li>
-            <li><code>script</code> carga <code>p5.js</code> y <code>ejemplo_1_1.js</code></li>
-            <li>Skecth (bosquejo): programa escrito con p5.js</li>
+            <li>Escribimos nuestro primer programa en Python</li>
+            <li>x, y son variables</li>
+            <li>x vale 4, y vale 6</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Nuestro bosquejo</h6>
+          <h6 style="text-align:left;">Variables</h6>
         </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
-								function draw(){
-								  rect(100,100,50,50);
-								}
-							</code>
-						</pre>
         <p>
           <ul style="float:left;">
-            <li>Con <code>createCanvas();</code> creamos el lienzo</li>
-            <li>Con <code>rect();</code> dibujamos un rectángulo</li>
+            <li>El código se ejecuta línea a línea, de arriba a abajo</li>
+            <li>Las variables almacenan valores</li>
+            <li>Las variables pueden cambiar de valor</li>
+            <li>Pueden ser de tipo int, float, String, char, byte, ...</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Orden de ejecución</h6>
+          <h6 style="text-align:left;">Segundo ejemplo: poema estático</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
-								function draw(){
-								  rect(100,100,50,50);
-								}
+                poema = "veinte bytes de amor y un bit desesperado"
+                print poema
 							</code>
-						</pre>
+				</pre>
         <p>
           <ul>
-            <li>Ejecución línea a línea, de arriba hacia abajo</li>
-            <li><code>setup()</code> se ejecuta al principio, una vez</li>
-            <li><code>draw()</code> corre en bucle, después de setup()</li>
-            <li><code>setup()</code> y <code>draw()</code> son funciones</li>
+            <li>Nuevo archivo, ejemplo01.py</li>
+            <li>Partiremos desde un ejemplo estático</li>
+            <li>El resultado es siempre igual, muy aburrido...</li>
+            <li>Introduzcamos aleatoreidad</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Orden de ejecución: función <code>setup()</code></h6>
+          <h6 style="text-align:left;">Segundo ejemplo: poema + random</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
+                import random
+                poema = " bytes de amor y un bit desesperado"
+                print str(random.random()) + poema
 							</code>
-						</pre>
+				</pre>
         <p>
-          <ul>
-            <li>En <code>setup()</code> definimos las condiciones iniciales</li>
-            <li>Aquí creamos un lienzo con <code>createCanvas()</code></li>
+        <ul>
+        <li>Agregamos biblioteca random</li>
+        <li>Importamos la biblioteca random de Python</li>
+        <li>random.random() arroja un número entre 0 y 1</li>
+        <li>str(x) convierte el número x en el String "x"</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Orden de ejecución: función <code>draw()</code></h6>
+          <h6 style="text-align:left;">Manipulación de texto</h6>
         </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-								function draw(){
-								  rect(100,100,50,50);
-								}
-							</code>
-						</pre>
         <p>
           <ul>
-            <li><code>draw()</code> se ejecuta en bucle, después de <code>setup()</code></li>
-            <li>Dibujamos un rectángulo en el lienzo con <code>rect();</code></li>
-            <li><code>rect(50,50,20,20);</code>define sus características</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Sintaxis</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-								function setup(){
-								  createCanvas(200,200);
-								}
-								function draw(){
-								  rect(100,100,50,50);
-								}
-							</code>
-						</pre>
-        <p>
-          <ul>
-            <li>Bloque de código: contenido entre llaves<code>{}</code></li>
-            <li>Línea de código: delimitada por punto y coma (<code>;</code>):</li>
+            <li>Descarga de textos gratuitos desde <a href="http://www.gutenberg.org/">Project Gutenberg</a></li>
+            <li>Para este ejemplo: quijote.txt</li>
           </ul>
         </p>
       </section>
