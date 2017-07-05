@@ -314,176 +314,100 @@
 							</code>
 				</pre>
         <p>
-        <ul>
-        <li>Agregamos biblioteca random</li>
-        <li>Importamos la biblioteca random de Python</li>
-        <li>random.random() arroja un número entre 0 y 1</li>
-        <li>str(x) convierte el número x en el String "x"</li>
+          <ul>
+            <li>Agregamos biblioteca random</li>
+            <li>Importamos la biblioteca random de Python</li>
+            <li>random.random() arroja un número entre 0 y 1</li>
+            <li>str(x) convierte el número x en el String "x"</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Manipulación de texto</h6>
+          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
         </p>
         <p>
           <ul>
-            <li>Descarga de textos gratuitos desde <a href="http://www.gutenberg.org/">Project Gutenberg</a></li>
+            <li>Descarga de textos desde <a href="http://www.gutenberg.org/">Project Gutenberg</a></li>
             <li>Para este ejemplo: quijote.txt</li>
+            <li>En Windows: instalar <a href="https://github.com/bmatzelle/gow/releases">GNU on Windows</a> </li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Figuras básicas: rectángulo</h6>
+          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
         </p>
-        <pre>
-								<code class="hljs" data-trim contenteditable>
-									function setup(){
-									  createCanvas(200,200);
-									}
+        <p>
+          <ul style="float:left;">
+            <li>Concatenar: comando00 | comando01 | comando 02</li>
+            <li>Imprimir: cat archivo</li>
+            <li>Buscar: grep String</li>
+            <li>Ordenar: sort</li>
+            <li>Traducir: tr x y</li>
+            <li>Guardar: ... > archivo.txt</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Git y Github</h6>
+        </p>
+        <ul style="float:left;">
 
-									function draw(){
-									  rect(100,100,50,50);
-									}
-								</code>
-							</pre>
-
-        <p>
-          <ul style="float:left;">
-            <li><code>rect(posX, posY, alto, ancho)</code></li>
-            <li><a target="_blank" href="http://p5js.org/es/reference/">Referencia de p5.js</a></li>
-            </u>
+          <li>Git es un sistema de control de versiones</li>
+          <li>Inventado por Linus Torvalds</li>
+          <li>Github implementa Git en la nube</li>
+        </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Segundo ejemplo: dibujar una elipse (1.2)</h6>
+          <h6 style="text-align:left;">Git y GitHub</h6>
         </p>
         <p>
-          <pre>
-						<code class="hljs" data-trim contenteditable>
-							function setup(){
-							  createCanvas(300,200);
-							}
-
-							function draw(){
-							  ellipse(150,100,90,90);
-							}
-						</code>
-					</pre>
           <ul style="float:left;">
-            - formas elementales:
-            <ul>
-              - elipse<br> - línea
-            </ul>
+            <li>Crear una cuenta de usuario</li>
+            <li>Crear un repositorio con README</li>
+            <li>Respaldar archivos creados hasta el momento</li>
+            <li>Motivación adicional: GitHub Pages</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Funciones: sintaxis</h6>
+          <h6 style="text-align:left;">Listas</h6>
         </p>
         <p>
           <ul style="float:left;">
-            <li>"Conjunto de líneas de código que realizan una tarea específica y que puede retornar un valor. Puede tomar parámetros que modifican su funcionamiento." <a target="_blank" href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C%2B%2B/Funciones">Fuente</a></q>
-            </li>
-            <li>La sintaxis de las funciones de p5.js está en la <a target="_blank" href="https://p5js.org/es/reference/">referencia</a></li>
-          </ul>
+            <li>Lista: secuencia de valores</li>
+            <li>x = [5, 10, 15, 20, 25, 30]</li>
+            <li>Indexadas en 0</li>
+            <li>x[2] es 15</li>
+            <li>Imprimir largo: print len(x)</li>
+            <li>Elemento aleatorio: random.choice(x)</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Funciones: argumentos</h6>
+          <h6 style="text-align:left;">¿Por qué Python?</h6>
         </p>
         <p>
           <ul style="float:left;">
-            <li>funciones que requieren argumento: </li>
-            <ul>
-              <li><code>createCanvas(300,200)</code></li>
-              <li><code>ellipse(100,100,50,50)</code></li>
-            </ul>
-            <li>funciones que no requieren argumento: </li>
-            <ul>
-              <li><code>setup()</code></li>
-              <li><code>draw()</code></li>
-            </ul>
+              <li>Gratis</li>
+              <li>Gran claridad</li>
+              <li>Fácil lectura y escritura</li>
+              <li><a href="https://pypi.python.org/pypi">Bibliotecas</a></li>
+              <ul style="float:left;">
+                <li><a href="https://github.com/aparrish/pytracery">Tracery for Python</a></li>
+                </ul>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Funciones: <code>createCanvas()</code></h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>Crea un lienzo (canvas) para dibujar</li>
-            <li>Sintaxis: <code>createCanvas(ancho, alto)</code></li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Funciones: <code>createCanvas()</code></h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>mostrar un esquema de un canvas</li>
-            <li>Es una matriz 2D, con filas y columnas</li>
-            <li>Cada pixel corresponde a un par ordenado <code>(x,y)</code></li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Funciones: revisión del ejemplo 1.2</h6>
-        </p>
-        <pre>
-						<code class="hljs" data-trim contenteditable>
-							function setup(){
-							  createCanvas(300,200);
-							}
-
-							function draw(){
-							  ellipse(150,100,90,90);
-							}
-						</code>
-					</pre>
-        <p>
-          <ul style="float:left;">
-            <li>No hemos definido el color del lienzo</li>
-            <li>¿Cómo pintamos el lienzo completo?</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Funciones: color del lienzo</h6>
-        </p>
-        <pre>
-						<code class="hljs" data-trim contenteditable>
-							function setup(){
-							  createCanvas(300,200);
-							  background(150);
-							}
-
-							function draw(){
-							  ellipse(150,100,90,90);
-							}
-						</code>
-					</pre>
-        <p>
-          <ul style="float:left;">
-            <li>La función <code>background(color)</code> pinta el lienzo</li>
-            <li><code>background(150)</code> pinta el lienzo de color gris</li>
-            <li>¿Cómo definimos el color del lienzo?</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h2>¡a experimentar!</h2>
+          <h2>¡A experimentar!</h2>
         </p>
       </section>
       <section>
@@ -492,9 +416,8 @@
         </p>
         <p>
           <ul style="float:left;">
-            <li><a target="_blank" href="http://p5js.org/es/reference/">Referencia p5.js</a><br></li>
-            <li><a target="_blank" href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">The Coding Train</a>, Daniel Shiffman<br></li>
-            <li>"Make: Getting Started with p5.js", Lauren McCarthy, Casey Reas and Ben Fry. Maker Media, 2015.</li>
+            <li><a target="_blank" href="https://docs.python.org/2/reference/index.html">The Python Language Reference</a><br></li>
+            <li><a target="_blank" href="hhttp://rwet.decontextualize.com/">Reading and Writing Electronic Text</a>, por Allison Parrish</li>
           </ul>
         </p>
       </section>
