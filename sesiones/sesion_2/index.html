@@ -67,7 +67,7 @@
         <p>
           <ul style="float:left;">
             <li>Strings</li>
-            <li>Arreglos, listas, diccionarios, sets, tuplas</li>
+            <li>Listas, diccionarios,tuplas</li>
             <li>Condicionales: if, else</li>
             <li>Bucles: for, while</li>
             <li>Usar bibliotecas externas</li>
@@ -77,88 +77,106 @@
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">¿Qué significa programar?</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>Escribir instrucciones para que un dispositivo realice las tareas que quieras</li>
-            <li>Dispositivos: computador, celular, Arduino, TV, microondas, etc.</li>
-            <li>Los computadores calculan, no deducen</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Ejemplo de código</h6>
+          <h6 style="text-align:left;">Strings</h6>
         </p>
 
         <pre>
           <code class="hljs" data-trim contenteditable>
-            metaforas = 4
-            nivelDelMar = metaforas + 2
-            "cuatro"
+            import string
+            string.ascii_letters
+            string.digits
+            string.punctuation
+            s = "HOLA"
+            string.lower(s)
+            lista = "alo alo probando".split()
+            print type(lista)
 					</code>
         </pre>
-        <p align="right">
-          <small>
-						Este código está escrito en Python, un lenguaje de programación
-					</small>
-          </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Herramientas necesarias del taller</h6>
+          <h6 style="text-align:left;">Listas</h6>
         </p>
-        <p>
-          <ul style="float:left;">
-            <li>Editor de texto</li>
-            <ul>
-              <li><a target="_blank" href="https://atom.io/">Atom</a></li>
-              <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></li>
-              <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a></li>
-            </ul>
-            <li>Instalar <a target="_blank" href="https://www.python.org/downloads/">Python 2.7.x</a></li>
-            <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a></li>
-          </ul>
-        </p>
+
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            x = ["el", "mejor", "poema", "del", "mundo"]
+            print x[2]
+            print x[21/7]
+            x.append("de todos los tiempos")
+            x.sort()
+            string.ascii_letters
+            string.digits
+            string.punctuation
+            s = "HOLA"
+            string.lower(s)
+					</code>
+        </pre>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Primer ejemplo</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>Abrir editor de código (Atom, Sublime, Notepad)</li>
-            <li>Escribir el siguiente código</li>
-            <pre>
-              <code class="hljs" data-trim contenteditable>
-                x = 4
-                y = x + 2
-                print x
-                print y
-    					</code>
-            </pre>
-            <li>Grabar el archivo como ejemplo00.py</li>
-            <li>Abrir la terminal</li>
-            <li>Ejecutar el código con: python ejemplo00.py</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Resultado en la terminal</h6>
+          <h6 style="text-align:left;">Condicionales: if, else</h6>
         </p>
         <pre>
-							<code class="hljs" data-trim contenteditable>
-                4
-                6
-							</code>
-						</pre>
+          <code class="hljs" data-trim contenteditable>
+            import random
+            x = random.random()
+            if x < 0.2:
+              print "x es menor que 0.2"
+            elif x <= 0.5:
+              print "x es mayor que 0.2 y menor o igual que 0.5"
+            else:
+              print "x es mayor que 0.5"
+					</code>
+        </pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Condicionales: if, else</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            //comparadores:
+            //< > >= <= == !=
+					</code>
+        </pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Bucles: for</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            for i in range(5):
+              print i
+					</code>
+        </pre>
+
+      </section>
+        <section>
+          <p>
+            <h6 style="text-align:left;">Bucles: while</h6>
+          </p>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              for i in range(5):
+                print i
+  					</code>
+          </pre>
+
+        </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Caracteres de escape</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            poema_de_varias_lineas = "la primera linea,\nla segunda linea\n, varias lineas\n...\nya no se que decir"
+					</code>
+				</pre>
         <p>
           <ul style="float:left;">
-            <li>Escribimos nuestro primer programa en Python</li>
-            <li>x, y son variables</li>
-            <li>x vale 4, y vale 6</li>
+            <li>Enter es \n</li>
           </ul>
         </p>
       </section>
