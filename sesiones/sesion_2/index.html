@@ -110,6 +110,8 @@
             string.punctuation
             s = "HOLA"
             string.lower(s)
+            random.shuffle(x)
+            random.choice(x)
 					</code>
         </pre>
       </section>
@@ -176,144 +178,71 @@
 				</pre>
         <p>
           <ul style="float:left;">
-            <li>Enter es \n</li>
+            <li>\n es enter</li>
+            <li>\' es '</li>
+            <li>\" es "</li>
+            <li>\t es tab</li>
           </ul>
         </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Variables</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>El código se ejecuta línea a línea, de arriba a abajo</li>
-            <li>Las variables almacenan valores</li>
-            <li>Las variables pueden cambiar de valor</li>
-            <li>Pueden ser de tipo int, float, String, char, byte, ...</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Segundo ejemplo: poema estático</h6>
+          <h6 style="text-align:left;">Trozado de strings</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
-                poema = "veinte bytes de amor y un bit desesperado"
-                print poema
+              verdad = "sopaipilla"
+              print verdad[3]
+              print verdad[1:4]
+              print verdad[:5]
+              print verdad[1:]
+              print verdad[-2]
+              print verdad[:]
+              print 'a' in verdad
+              print 'x' in verdad
 							</code>
 				</pre>
-        <p>
-          <ul>
-            <li>Nuevo archivo, ejemplo01.py</li>
-            <li>Partiremos desde un ejemplo estático</li>
-            <li>El resultado es siempre igual, muy aburrido...</li>
-            <li>Introduzcamos aleatoreidad</li>
-          </ul>
-        </p>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Segundo ejemplo: poema + random</h6>
+          <h6 style="text-align:left;">Módulo sys: contar palabras</h6>
         </p>
         <pre>
 							<code class="hljs" data-trim contenteditable>
-                import random
-                poema = " bytes de amor y un bit desesperado"
-                print str(random.random()) + poema
-							</code>
-				</pre>
-        <p>
-          <ul>
-            <li>Agregamos biblioteca random</li>
-            <li>Importamos la biblioteca random de Python</li>
-            <li>random.random() arroja un número entre 0 y 1</li>
-            <li>str(x) convierte el número x en el String "x"</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
-        </p>
-        <p>
-          <ul>
-            <li>Descarga de textos desde <a href="http://www.gutenberg.org/">Project Gutenberg</a></li>
-            <li>Para este ejemplo: quijote.txt</li>
-            <li>En Windows: instalar <a href="https://github.com/bmatzelle/gow/releases">GNU on Windows</a> </li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>Concatenar: comando00 | comando01 | comando 02</li>
-            <li>Imprimir: cat archivo</li>
-            <li>Buscar: grep String</li>
-            <li>Ordenar: sort</li>
-            <li>Traducir: tr x y</li>
-            <li>Guardar: ... > archivo.txt</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Git y Github</h6>
-        </p>
-        <ul style="float:left;">
+              import sys
 
-          <li>Git es un sistema de control de versiones</li>
-          <li>Inventado por Linus Torvalds</li>
-          <li>Github implementa Git en la nube</li>
-        </ul>
-        </p>
+              total_palabras = 0
+
+              for linea in sys.stdin:
+                linea = linea.strip()
+                palabras = linea.split(" ")
+                palabras_en_linea = len(words)
+                total_palabras = total_palabras + palabras_en_linea
+
+              print total_palabras
+
+							</code>
+				</pre>
       </section>
       <section>
         <p>
-          <h6 style="text-align:left;">Git y GitHub</h6>
+          <h6 style="text-align:left;">Módulo sys: hacer lista de palabras</h6>
         </p>
-        <p>
-          <ul style="float:left;">
-            <li>Crear una cuenta de usuario</li>
-            <li>Crear un repositorio con README</li>
-            <li>Respaldar archivos creados hasta el momento</li>
-            <li>Motivación adicional: GitHub Pages</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Listas</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>Lista: secuencia de valores</li>
-            <li>x = [5, 10, 15, 20, 25, 30]</li>
-            <li>Indexadas en 0</li>
-            <li>x[2] es 15</li>
-            <li>Imprimir largo: print len(x)</li>
-            <li>Elemento aleatorio: random.choice(x)</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">¿Por qué Python?</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-              <li>Gratis</li>
-              <li>Gran claridad</li>
-              <li>Fácil lectura y escritura</li>
-              <li><a href="https://pypi.python.org/pypi">Bibliotecas</a></li>
-              <ul style="float:left;">
-                <li><a href="https://github.com/aparrish/pytracery">Tracery for Python</a></li>
-                </ul>
-          </ul>
-        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                import sys
+
+                todas_las_palabras = list()
+
+                for linea in sys.stdin:
+                  linea = linea.strip()
+                  palabras = linea.split(" ")
+                  for palabra in palabras:
+                    todas_las_palabras.append(palabra)
+
+                  print todas_las_palabras
+							</code>
+				</pre>
       </section>
       <section>
         <p>
