@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Coded - Taller de escritura digital creativa - sesión 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white_lower.css" id="theme">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <!--- Enlaces highlights.js para utilizar bibliteca para imprimir códigos. usar <pre><code>...</pre></code> --->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--- FIN Enlaces biblioteca highlights.js --->
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <script type="text/template">
+          <h2>Taller de escritura digital creativa</h2>
+          <br>
+          <h3>Sesión 1</h3>
+          <p>
+            <a target="_blank" href="http://codedescuela.cl/">Coded Escuela </a><br>
+            <small>Versión 0.0.1 por <a target="_blank" href="https://github.com/gamontec">Aarón Montoya-Moraga</a><small>
+          </p>
+        </script>
+      </section>
+      <section>
+        <h3 style="text-align:left;">¿Quiénes somos?</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li><b><a href="http://montoyamoraga.io/">Aarón Montoya-Moraga</a></b>: artista, programador, músico
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Coded Escuela</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li><a target="_blank" href="http://www.nataliacabrera.com">Natalia Cabrera</a></li>
+            <li><a target="_blank" href="https://www.camilacolussi.com">Camila Colussi</a></li>
+            <li><a target="_blank" href="https://gamontec.github.io">Guillermo Montecinos</a></li>
+            <li><a target="_blank" href="http://montoyamoraga.io">Aarón Montoya-Moraga</a></li>
+            <li><a target="_blank" href="http://error404.cl/">Christian Oyarzún</a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Sobre Coded Escuela</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li>Programación creativa</li>
+            <li>Espacio seguro y ético</li>
+            <li>Código abierto</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Nuestros talleres</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li>Intro a la programación y artes visuales en p5.js</li>
+            <li>Intro a la programación y literatura en Python</li>
+            <li>Intro a la programación y sonido en Pure Data</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h3>Objetivos del taller</h3>
+        <p align="left">
+          <ul>
+            <li>Respetarnos y protegernos</li>
+            <li>Formar una comunidad colaborativa de hackers, artistas, amigos, programadores</li>
+            <li>Escribir software que nos permita crear y manipular texto digitalmente</li>
+            <li>Aprender a programar en Python</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h3>Sesión 1</h3>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Contenidos</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>¿Qué es programar? ¿Para qué hacerlo?</li>
+            <li>Lenguajes de programación</li>
+            <li>Fundamentos de programación</li>
+            <li>Entornos de programación creativa</li>
+            <li>Terminal y editor de código</li>
+            <li>Fundamentos de Python</li>
+            <li>Variables y funciones</li>
+            <li>Nuestro primer programa</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h6 style="text-align:left;">Motivación</h6>
+        <p>
+          <ul>
+          <li>¿Qué entendemos por programación?</li>
+          <li>¿Por qué nos interesa programar?</li>
+          <li>Ejemplos de programación + texto</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <h6 style="text-align:left;">Motivación</h6>
+        <p>
+          <ul style="float:left;">
+            <li><a href="http://www.decontextualize.com/projects/">Allison Parrish</a></li>
+            <ul>
+                <li><a href="https://twitter.com/deepquestionbot">The Ephemerides</a></li>
+                <li><a href="https://thenewinquiry.com/taxonomy-of-humans-according-to-twitter/">Deep Question Bot</a></li>
+            </ul>
+            <li><a href="http://intergovernmentalpaneloncapitalism.org/index.html">Sam Lavigne</a></li>
+              <ul>
+                <li><a href="https://thenewinquiry.com/taxonomy-of-humans-according-to-twitter/">The Infinite Campaign </a></li>
+                <li><a href="http://intergovernmentalpaneloncapitalism.org/">The Intergovernmental Panel on Capitalism</a></li>
+              </ul>
+                <li><a href="nonsequitur.py">nonsequitur.py</a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Qué significa programar?</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Escribir instrucciones para que un dispositivo realice las tareas que quieras</li>
+            <li>Dispositivos: computador, celular, Arduino, TV, microondas, etc.</li>
+            <li>Los computadores calculan, no deducen</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Qué significa programar?</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Algoritmo: secuencia de instrucciones a ser ejecutadas. Receta de cocina para el computador.</li>
+            <li>Código: texto que el computador puede entender.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+        <p>
+          <h6 style="text-align:left;">Ejemplo de código</h6>
+        </p>
+
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            metaforas = 4
+            nivelDelMar = metaforas + 2
+            "cuatro"
+					</code>
+        </pre>
+        <p align="right">
+          <small>
+						Este código está escrito en Python, un lenguaje de programación
+					</small>
+          </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Por qué programar?</h6>
+        </p>
+        <ul>
+          <li>Programar para crear nuestras propias herramientas</li>
+          <li>Programar con fines productivos y artísticos</li>
+          <!-- <li>Programar el reloj y no quedarse dormido</li> -->
+          <li>Programar para ser partícipes de la tecnología, no solo espectadores</li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Python</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Lenguaje de programación</li>
+            <li><a target="_blank" href="https://www.python.org/">python.org</a></li>
+            <li><a target="_blank" href="https://pypi.python.org/">PyPI: Python Package Index</a></li>
+            <li><q> "Python tiene una filosofía de diseño que promueve la escritura de programas de fácil lectura, claros y de pocas líneas de  código."</q></li>
+
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Herramientas necesarias del taller</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Editor de texto</li>
+            <ul>
+              <li><a target="_blank" href="https://atom.io/">Atom</a></li>
+              <li><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></li>
+              <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a></li>
+            </ul>
+            <li>Instalar <a target="_blank" href="https://www.python.org/downloads/">Python 2.7.x</a></li>
+            <li>Crear una cuenta en <a target="_blank" href="https://github.com/">Github</a></li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Primer ejemplo</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Abrir editor de código (Atom, Sublime, Notepad)</li>
+            <li>Escribir el siguiente código</li>
+            <pre>
+              <code class="hljs" data-trim contenteditable>
+                x = 4
+                y = x + 2
+                print x
+                print y
+    					</code>
+            </pre>
+            <li>Grabar el archivo como ejemplo00.py</li>
+            <li>Abrir la terminal</li>
+            <li>Ejecutar el código con: python ejemplo00.py</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Resultado en la terminal</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                4
+                6
+							</code>
+						</pre>
+        <p>
+          <ul style="float:left;">
+            <li>Escribimos nuestro primer programa en Python</li>
+            <li>x, y son variables</li>
+            <li>x vale 4, y vale 6</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Variables</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>El código se ejecuta línea a línea, de arriba a abajo</li>
+            <li>Las variables almacenan valores</li>
+            <li>Las variables pueden cambiar de valor</li>
+            <li>Pueden ser de tipo int, float, String, char, byte, ...</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Segundo ejemplo: poema estático</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                poema = "veinte bytes de amor y un bit desesperado"
+                print poema
+							</code>
+				</pre>
+        <p>
+          <ul>
+            <li>Nuevo archivo, ejemplo01.py</li>
+            <li>Partiremos desde un ejemplo estático</li>
+            <li>El resultado es siempre igual, muy aburrido...</li>
+            <li>Introduzcamos aleatoreidad</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Segundo ejemplo: poema + random</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                import random
+                poema = " bytes de amor y un bit desesperado"
+                print str(random.random()) + poema
+							</code>
+				</pre>
+        <p>
+          <ul>
+            <li>Agregamos biblioteca random</li>
+            <li>Importamos la biblioteca random de Python</li>
+            <li>random.random() arroja un número entre 0 y 1</li>
+            <li>str(x) convierte el número x en el String "x"</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
+        </p>
+        <p>
+          <ul>
+            <li>Descarga de textos desde <a href="http://www.gutenberg.org/">Project Gutenberg</a></li>
+            <li>Para este ejemplo: quijote.txt</li>
+            <li>En Windows: instalar <a href="https://github.com/bmatzelle/gow/releases">GNU on Windows</a> </li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Manipulación de texto: terminal</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Concatenar: comando00 | comando01 | comando 02</li>
+            <li>Imprimir: cat archivo</li>
+            <li>Buscar: grep String</li>
+            <li>Ordenar: sort</li>
+            <li>Traducir: tr x y</li>
+            <li>Guardar: ... > archivo.txt</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Git y Github</h6>
+        </p>
+        <ul style="float:left;">
+
+          <li>Git es un sistema de control de versiones</li>
+          <li>Inventado por Linus Torvalds</li>
+          <li>Github implementa Git en la nube</li>
+        </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Git y GitHub</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Crear una cuenta de usuario</li>
+            <li>Crear un repositorio con README</li>
+            <li>Respaldar archivos creados hasta el momento</li>
+            <li>Motivación adicional: GitHub Pages</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Listas</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Lista: secuencia de valores</li>
+            <li>x = [5, 10, 15, 20, 25, 30]</li>
+            <li>Indexadas en 0</li>
+            <li>x[2] es 15</li>
+            <li>Imprimir largo: print len(x)</li>
+            <li>Elemento aleatorio: random.choice(x)</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">¿Por qué Python?</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+              <li>Gratis</li>
+              <li>Gran claridad</li>
+              <li>Fácil lectura y escritura</li>
+              <li><a href="https://pypi.python.org/pypi">Bibliotecas</a></li>
+              <ul style="float:left;">
+                <li><a href="https://github.com/aparrish/pytracery">Tracery for Python</a></li>
+                </ul>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h2>¡A experimentar!</h2>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Referencias</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li><a target="_blank" href="https://docs.python.org/2/reference/index.html">The Python Language Reference</a><br></li>
+            <li><a target="_blank" href="hhttp://rwet.decontextualize.com/">Reading and Writing Electronic Text</a>, por Allison Parrish</li>
+          </ul>
+        </p>
+      </section>
+
+
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [{
+          src: 'lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>
