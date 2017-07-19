@@ -96,7 +96,14 @@
       <section>
           <img src="./pics/arp.png" width="700">
             <p>
-              <h6 style="text-align:center;">Sintetizador ARP</h6>
+              <h6 style="text-align:center;">Diagrama de bloques sintetizador ARP</h6>
+            </p>
+      </section>
+
+      <section>
+          <img src="./pics/moog.jpg" width="700">
+            <p>
+              <h6 style="text-align:center;">Sintetizador modular Moog</h6>
             </p>
       </section>
 
@@ -186,169 +193,30 @@
 
       <section>
         <p>
-          <h6 style="text-align:left;">Condicionales: if, else</h6>
+          <h6 style="text-align:left;">Pseudocódigo</h6>
         </p>
+      </section>
+
+      <section>
         <pre>
           <code class="hljs" data-trim contenteditable>
-            import random
-            x = random.random()
-            if x < 0.2:
-              print "x es menor que 0.2"
-            elif x <= 0.5:
-              print "x es mayor que 0.2 y menor o igual que 0.5"
-            else:
-              print "x es mayor que 0.5"
+            # los comentarios en Python se hacen con #
+            # el pseudocódigo es escribir de manera agnóstica
+            # el pseudocódigo es la luz
+            # escribir pseudocódigo en diseño top-down
+            # dividir para conquistar
+            # definir variables, funciones, interdependencias
+            # definir etapas, jerarquizar por importancia y urgencia
 					</code>
         </pre>
       </section>
+
       <section>
         <p>
-          <h6 style="text-align:left;">Condicionales: if, else</h6>
-        </p>
-        <pre>
-          <code class="hljs" data-trim contenteditable>
-            //comparadores:
-            //< > >= <= == !=
-					</code>
-        </pre>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Bucles: for</h6>
-        </p>
-        <pre>
-          <code class="hljs" data-trim contenteditable>
-            for i in range(5):
-              print i
-					</code>
-        </pre>
-
-      </section>
-        <section>
-          <p>
-            <h6 style="text-align:left;">Bucles: while</h6>
-          </p>
-          <pre>
-            <code class="hljs" data-trim contenteditable>
-              contador = 0
-              maximo = 100
-              paso = 1
-              while contador < maximo:
-                print contador
-                contador = contador + paso
-  					</code>
-          </pre>
-
-        </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Caracteres de escape</h6>
-        </p>
-        <pre>
-          <code class="hljs" data-trim contenteditable>
-            poema_de_varias_lineas = "la primera linea,
-            \nla segunda linea,\n
-            varias lineas\n
-            ...\n
-            ya no se que decir"
-					</code>
-				</pre>
-        <p>
-          <ul style="float:left;">
-            <li>\n es enter</li>
-            <li>\' es '</li>
-            <li>\" es "</li>
-            <li>\t es tab</li>
-          </ul>
+          <h6 style="text-align:left;">Buenos modales</h6>
         </p>
       </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Trozado de strings</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-              verdad = "sopaipilla"
-              print verdad[3]
-              print verdad[1:4]
-              print verdad[:5]
-              print verdad[1:]
-              print verdad[-2]
-              print verdad[:]
-              print 'a' in verdad
-              print 'x' in verdad
-							</code>
-				</pre>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Módulo sys: contar palabras</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-              import sys
 
-              total_palabras = 0
-
-              for linea in sys.stdin:
-                linea = linea.strip()
-                palabras = linea.split(" ")
-                palabras_en_linea = len(words)
-                total_palabras = total_palabras + palabras_en_linea
-
-              print total_palabras
-
-							</code>
-				</pre>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Módulo sys: hacer lista de palabras</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-                import sys
-
-                todas_las_palabras = list()
-
-                for linea in sys.stdin:
-                  linea = linea.strip()
-                  palabras = linea.split(" ")
-                  for palabra in palabras:
-                    todas_las_palabras.append(palabra)
-
-                  print todas_las_palabras
-							</code>
-				</pre>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Instalar pip y otros módulos</h6>
-        </p>
-        <p>
-          <ul style="float:left;">
-            <li>pip es un módulo para instalar módulos</li>
-            <li>https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows</li>
-            <li>Instalación global versus local</li>
-            <li>Instalación global de virtualenv</li>
-            <li>Instalación local de otros módulos</li>
-          </ul>
-        </p>
-      </section>
-      <section>
-        <p>
-          <h6 style="text-align:left;">Uso de pip</h6>
-        </p>
-        <pre>
-							<code class="hljs" data-trim contenteditable>
-                cd Desktop
-                virtualenv env
-                source env/bin/activate
-                pip install tracery
-                pip install --no-cache-dir nonsequitur
-							</code>
-				</pre>
-      </section>
       <section>
         <p>
           <h6 style="text-align:left;">Módulos interesantes</h6>
