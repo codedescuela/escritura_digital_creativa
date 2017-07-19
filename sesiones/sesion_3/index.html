@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Coded - Taller de escritura digital creativa - sesión 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white_lower.css" id="theme">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <!--- Enlaces highlights.js para utilizar bibliteca para imprimir códigos. usar <pre><code>...</pre></code> --->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--- FIN Enlaces biblioteca highlights.js --->
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown>
+        <script type="text/template">
+          <h2>Taller de escritura digital creativa</h2>
+          <br>
+          <h3>Sesión 3</h3>
+          <p>
+            <a target="_blank" href="http://codedescuela.cl/">Coded Escuela </a><br>
+            <small>Versión 0.0.1 por <a target="_blank" href="https://github.com/gamontec">Aarón Montoya-Moraga</a><small>
+          </p>
+        </script>
+      </section>
+      <section>
+        <h3 style="text-align:left;">Repaso</h3>
+        <p style="text-align:left">
+          <ul style="float:left">
+            <li>Bucle for</li>
+            <li>Condicionales if, elif, else</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h3>Sesión 3</h3>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Contenidos</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>Modularidad</li>
+            <li>Funciones</li>
+            <li>Pseudocódigo</li>
+            <li>Buenas prácticas</li>
+            <li>Bibliotecas externas con pip</li>
+            <li>Proyecto final del curso</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+        <p>
+          <h6 style="text-align:left;">Modularidad</h6>
+        </p>
+      </section>
+
+      <section>
+        <p>
+          <ul style="float:left;">
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=S4KrIMZpwCY">Ejemplo: Ford Model T</a></li>
+            <li>Un módulo por cada tarea</li>
+            <li>Reusabilidad</li>
+            <li>Entrada y salida</li>
+            <li>Parámetros y return</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+          <img src="./pics/arp.png" width="700">
+            <p>
+              <h6 style="text-align:center;">Sintetizador ARP</h6>
+            </p>
+      </section>
+
+      <section>
+        <p>
+          <h6 style="text-align:left;">Funciones</h6>
+        </p>
+      </section>
+
+
+      <section>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            #sintaxis para definir funciones
+            #def nombreFuncion(parametros):
+              #cuerpo de la funcion
+
+            #ejemplo
+            def laUno():
+              print "hola"
+
+            #ejecutar la funcion
+            laUno()
+
+					</code>
+        </pre>
+      </section>
+
+      <section>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            #sintaxis para definir funciones
+            #def nombreFuncion(parametros):
+              #cuerpo de la funcion
+
+            #otro ejemplo
+            def laDos(mensaje):
+              print mensaje
+
+            #ejecutar la funcion
+            laDos()
+
+					</code>
+        </pre>
+      </section>
+
+      <section>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            #sintaxis para definir funciones
+            #def nombreFuncion(parametros):
+              #cuerpo de la funcion
+
+            #otro ejemplo
+            def laTres(mensaje, veces):
+              for i in range(veces):
+                print mensaje
+
+            #ejecutar la funcion
+            laTres()
+
+					</code>
+        </pre>
+      </section>
+
+      <section>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            # sintaxis para definir funciones
+            # def nombreFuncion(parametros):
+              # cuerpo de la funcion
+
+            # otro ejemplo
+            # convierte el dinero que recibes
+            # en montos brutos y liquidos
+            def efectivoALiquido(efectivo):
+              liquido = efectivo / 0.9
+              return liquido
+
+            # llamar a la funcion
+            monto = efectivoALiquido(efectivo)
+            # imprimir resultado
+            print monto
+					</code>
+        </pre>
+      </section>
+
+      <section>
+        <p>
+          <h6 style="text-align:left;">Condicionales: if, else</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            import random
+            x = random.random()
+            if x < 0.2:
+              print "x es menor que 0.2"
+            elif x <= 0.5:
+              print "x es mayor que 0.2 y menor o igual que 0.5"
+            else:
+              print "x es mayor que 0.5"
+					</code>
+        </pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Condicionales: if, else</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            //comparadores:
+            //< > >= <= == !=
+					</code>
+        </pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Bucles: for</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            for i in range(5):
+              print i
+					</code>
+        </pre>
+
+      </section>
+        <section>
+          <p>
+            <h6 style="text-align:left;">Bucles: while</h6>
+          </p>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              contador = 0
+              maximo = 100
+              paso = 1
+              while contador < maximo:
+                print contador
+                contador = contador + paso
+  					</code>
+          </pre>
+
+        </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Caracteres de escape</h6>
+        </p>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            poema_de_varias_lineas = "la primera linea,
+            \nla segunda linea,\n
+            varias lineas\n
+            ...\n
+            ya no se que decir"
+					</code>
+				</pre>
+        <p>
+          <ul style="float:left;">
+            <li>\n es enter</li>
+            <li>\' es '</li>
+            <li>\" es "</li>
+            <li>\t es tab</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Trozado de strings</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+              verdad = "sopaipilla"
+              print verdad[3]
+              print verdad[1:4]
+              print verdad[:5]
+              print verdad[1:]
+              print verdad[-2]
+              print verdad[:]
+              print 'a' in verdad
+              print 'x' in verdad
+							</code>
+				</pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Módulo sys: contar palabras</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+              import sys
+
+              total_palabras = 0
+
+              for linea in sys.stdin:
+                linea = linea.strip()
+                palabras = linea.split(" ")
+                palabras_en_linea = len(words)
+                total_palabras = total_palabras + palabras_en_linea
+
+              print total_palabras
+
+							</code>
+				</pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Módulo sys: hacer lista de palabras</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                import sys
+
+                todas_las_palabras = list()
+
+                for linea in sys.stdin:
+                  linea = linea.strip()
+                  palabras = linea.split(" ")
+                  for palabra in palabras:
+                    todas_las_palabras.append(palabra)
+
+                  print todas_las_palabras
+							</code>
+				</pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Instalar pip y otros módulos</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li>pip es un módulo para instalar módulos</li>
+            <li>https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows</li>
+            <li>Instalación global versus local</li>
+            <li>Instalación global de virtualenv</li>
+            <li>Instalación local de otros módulos</li>
+          </ul>
+        </p>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Uso de pip</h6>
+        </p>
+        <pre>
+							<code class="hljs" data-trim contenteditable>
+                cd Desktop
+                virtualenv env
+                source env/bin/activate
+                pip install tracery
+                pip install --no-cache-dir nonsequitur
+							</code>
+				</pre>
+      </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Módulos interesantes</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li><a href="https://github.com/aparrish/pytracery/#usage">Uso de Tracery for Python</a></li>
+            <li><a href="http://air.decontextualize.com/tracery/">Tutorial de Tracery</a></li>
+            <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"></a>Beautiful Soup 4</li>
+            <li><a href="https://github.com/antiboredom/videogrep"></a>videogrep</li>
+            <li><a href="https://vimeo.com/216734722"></a>Ejemplo de videogrep</li>
+          </ul>
+
+        </ul>
+        </p>
+      </section>
+        <section>
+          <p>
+            <h2>Discusión: proyecto final</h2>
+          </p>
+        </section>
+      <section>
+        <p>
+          <h6 style="text-align:left;">Referencias</h6>
+        </p>
+        <p>
+          <ul style="float:left;">
+            <li><a target="_blank" href="https://docs.python.org/2/reference/index.html">The Python Language Reference</a><br></li>
+            <li><a target="_blank" href="http://rwet.decontextualize.com/">Reading and Writing Electronic Text</a>, por Allison Parrish</li>
+            <li><a target="_blank" href="https://learnpythonthehardway.org/">Learn Python the hard way</a></li>
+            <li><a target="_blank" href="https://www.learnpython.org/">Learn Python</a></li>
+            <li><a target="_blank" href="https://www.learnenough.com/command-line-tutorial">Learn enough command line to be dangerous</a></li>
+            <li><a target="_blank" href="https://www.learnenough.com/text-editor-tutorial">Learn enough text editor to be dangerous</a></li>
+            <li><a target="_blank" href="https://www.learnenough.com/git-tutorial">Learn enough git to be dangerous</a></li>
+          </ul>
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [{
+          src: 'lib/js/classList.js',
+          condition: function() {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function() {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>
