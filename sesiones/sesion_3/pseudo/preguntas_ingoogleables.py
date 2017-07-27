@@ -8,21 +8,41 @@
 # july 19 2017
 # v 0.0.1
 
+
+#importar modulos
+import random
+import json
+
+
+datos_crudos = open("./jugadores_colo_colo.json").read()
+
+procesado = json.loads(datos_crudos)
+
+jugadores = procesado["jugadores_colo_colo"]
+
 # variables
-
 # questions
-# TODO
+pregun = ["quien", "donde", "cual", "cuando", "como"]
 # verbs
+verbos = ["pichanguear", "comer", "bailar", "saltar", "soslayar"]
 # adverbs
+adverbios = ["suavemente", "torpemente", "nunca", "correctamente", "poco"]
 # nouns
-
+sustantivos = ["un perro", "el mago valdivia", "tres chupacabras","las manzanas", "la micro"]
 
 # functions
 
 # function pregunta()
 # prints the question
-def pregunta():
+def preguntar():
     # here goes everything
-    print "TODO"
+    pregunta = random.choice(pregun) + " " + \
+    random.choice(verbos) + " " + \
+    random.choice(adverbios) + " " + \
+    random.choice(jugadores) + "?"
+    #random.choice(sustantivos) + "?"
+    return pregunta
 
-pregunta()
+x = preguntar()
+
+print x
