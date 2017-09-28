@@ -2,9 +2,13 @@
 
 ## sobre el curso
 
-taller de introducción a la programación de síntesis y manipulación digital de texto.
+taller de introducción a la programación en python para crear y manipular textos digitalmente.
 
-material escrito por aarón montoya-moraga para coded escuela, con ayuda de guillermo montecinos y ana maría moraga, basado en el curso reading and writing electronic text de allison parrish, dictado en new york university, interactive telecommunications program.
+el curso es dictado por el profesor aarón montoya-moraga, para la escuela coded, durante 4 sesiones, todos los miércoles de julio de 2017, en la comuna de ñuñoa, para un máximo de 5 estudiantes. el precio para las 4 sesiones es de $50.000 CLP en total, y para estudiantes es $20.000 CLP.
+
+## sobre el profesor
+
+aarón es chileno, ingeniero eléctrico, master en artes mediales de nyu itp, se especializa en la escritura de software para performance en vivo, con técnicas de síntesis y manipulación digital de audio, video y texto en tiempo real. es co-fundador y profesor de coded - escuela de artes y oficios electrónicos.
 
 ## sesiones y contenidos
 
