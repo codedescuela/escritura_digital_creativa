@@ -1,58 +1,58 @@
 # escritura_digital_creativa
 
-## sobre el curso
+## Sobre el curso
 
-taller de introducción a la programación de síntesis y manipulación digital de texto.
+Bienvenido al curso "Escritura digital creativa - introducción a la programación de síntesis y manipulación digital de texto".
 
-material escrito por aarón montoya-moraga para coded escuela, con ayuda de guillermo montecinos y ana maría moraga, basado en el curso reading and writing electronic text de allison parrish, dictado en new york university, interactive telecommunications program.
+El material es desarrollado y mantenido por Aarón Montoya-Moraga para CODED Escuela, con ayuda de Guillermo Montecinos y Ana María Moraga, y está basado en el curso "Reading and writing electronic text" de Allison Parrish, dictado en New York University, Tisch School of the Arts, Interactive Telecommunications Program.
 
-## sesiones y contenidos
+Este material es parte de la serie de cursos de introducción a la programación creados por CODED Escuela, distribuidos de forma gratuita en línea. Para más información, visitar codedescuela.cl
 
-### sesión 01 - miércoles 05 julio 2017
+## Historia
 
-* qué es programar
-* programación para síntesis y manipulación de texto
-* lenguajes de programación
-* entornos de programación creativa
-* lenguaje python y aplicaciones en texto
-* terminal y editor de código
-* variables y funciones
-* nuestro primer programa
+La primera versión de este taller fue dictada en julio de 2017, fueron cuatro sesiones de tres horas y tuvo 5 estudiantes.
 
-### sesión 02 - miércoles 12 julio 2017
+## Contenidos
 
-* git y github
-* strings
-* arreglos, listas, diccionarios, sets, tuplas
-* condicionales: if, else
-* bucles: for, while
-* discusión sobre proyectos finales del curso
+### Capítulo 00
 
-### sesión 03 - miércoles 19 julio 2017
+* ¿Qué es programar?
+* Lenguajes de programación
+* Entornos de programación creativa
+* Programación para síntesis y manipulación de texto
+* Lenguaje Python y aplicaciones en texto
+* Terminal y editor de código
+* Nuestro primer programa
 
-* modularidad
-* funciones y módulos
-* bibliotecas
-* trabajo en clases para el proyecto final
-* ejemplos de obras y herramientas digitales
-* apis y web
+### Capítulo 01
+
+* Variables y funciones
+* Git y Github
+* Strings
+* Arreglos, listas, diccionarios, sets, tuplas
+* Condicionales: if, else
+* Bucles: for, while
+
+### Capítulo 02
+
+* Modularidad
+* Funciones
+* Bibliotecas
+* APIs
 * pytracery
 
-### sesión 04 - miércoles 26 julio 2017
+### Capítulo 03: contenidos avanzados
 
-* presentación proyecto final
-* pasos a futuro
-* profundización en consola
-* aplicaciones para twitter
-* cadenas de markov
+* Aplicaciones en Twitter
+* Cadenas de Markov
 
-## compromisos
+## Compromisos
 
-todo el material generado por el profesor y los estudiantes durante el curso estará disponible de libre acceso en internet. viva el software libre.
+Todo el material generado por el profesor y los estudiantes durante el curso estará disponible de libre acceso en internet. viva el software libre.
 
 coded escuela podrá hacer uso de código y material audiovisual generado durante el taller para sus actividades promocionales y para postulación a fondos concursables y becas que nos permitan seguir con nuestra labor de enseñanza de código libre y abierto para artes mediales.
 
-## bibliografía
+## Bibliografía
 
-* [clase nyu itp: introduction to computation media](https://github.com/ITPNYU/ICM-2015)
-* [clase nyu itp, por allison parrish: reading and writing electronic text](http://rwet.decontextualize.com/)
+* [ntroduction to computational media - Clase en NYU ITP](https://github.com/ITPNYU/ICM-2015)
+* [Reading and writing electronic text - Clase en NYU ITP de Allison Parrish](http://rwet.decontextualize.com/)
